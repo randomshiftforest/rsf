@@ -1,0 +1,7 @@
+gitpython
+sklearn
+pandas
+numpy
+unlzw
+scipy
+astropy
