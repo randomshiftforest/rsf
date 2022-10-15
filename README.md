@@ -16,3 +16,7 @@ Make sure to have the latest Rust toolchain installed. Running `cargo test` runs
 ```
 $ RUSTFLAGS="-C target-cpu=native" cargo test
 ```
+
+## Notice
+
+Only tested on MacOS. In case of linking errors, you may need to download XCode and/or install `python3` via Homebrew.

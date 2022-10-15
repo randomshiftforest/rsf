@@ -30,5 +30,17 @@ rustfft = "6.0.1"
 serde = "1.0.136"
 serde_json = "1.0.79"
 
+[target.x86_64-apple-darwin]
+rustflags = [
+  "-C", "link-arg=-undefined",
+  "-C", "link-arg=dynamic_lookup",
+]
+
+[target.aarch64-apple-darwin]
+rustflags = [
+  "-C", "link-arg=-undefined",
+  "-C", "link-arg=dynamic_lookup",
+]
+
 [profile.test]
 opt-level = 3
